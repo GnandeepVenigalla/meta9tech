@@ -34,7 +34,7 @@ export default function Home() {
           }} />
 
           <div className="container" style={{ position: 'relative', zIndex: 10, paddingTop: '80px' }}>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center' }}>
+            <div className="grid-2-cols" style={{ alignItems: 'center' }}>
               <motion.div 
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -104,7 +104,7 @@ export default function Home() {
 
             <div style={{ 
               display: 'grid', 
-              gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', 
+              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', 
               gap: '2rem' 
             }}>
               {[
@@ -145,12 +145,7 @@ export default function Home() {
         {/* Global Presence Section */}
         <section className="section-padding" style={{ background: '#f8fafc', borderTop: '1px solid var(--border)', borderBottom: '1px solid var(--border)' }}>
           <div className="container">
-            <div style={{ 
-              display: 'grid', 
-              gridTemplateColumns: '1fr 1fr', 
-              gap: '4rem',
-              alignItems: 'center'
-            }}>
+            <div className="grid-2-cols" style={{ alignItems: 'center' }}>
               <motion.div
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -185,7 +180,7 @@ export default function Home() {
                   alt="Global Technology Network" 
                   style={{ width: '100%', height: 'auto', borderRadius: '16px', boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1)', marginBottom: '2rem' }} 
                 />
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1rem' }}>
+                <div className="grid-3-stats">
                   <div className="glass-panel" style={{ padding: '1.5rem', background: '#ffffff' }}>
                     <h3 style={{ fontSize: '2rem', marginBottom: '0.5rem', color: 'var(--primary)' }}>600+</h3>
                     <p style={{ fontSize: '0.9rem', fontWeight: 500 }}>Professionals</p>
@@ -202,13 +197,7 @@ export default function Home() {
               </motion.div>
             </div>
           </div>
-          <style jsx>{`
-            @media (max-width: 900px) {
-              div[style*="grid-template-columns: 1fr 1fr"] {
-                grid-template-columns: 1fr !important;
-              }
-            }
-          `}</style>
+
         </section>
 
         {/* CTA Section */}

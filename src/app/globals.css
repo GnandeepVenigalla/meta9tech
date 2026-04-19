@@ -94,7 +94,39 @@ a:hover {
 }
 
 .section-padding {
-  padding: 5rem 0;
+  padding: 3rem 0;
+}
+
+@media (min-width: 900px) {
+  .section-padding {
+    padding: 5rem 0;
+  }
+}
+
+/* Responsive Grid Utilities */
+.grid-2-cols {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+@media (min-width: 900px) {
+  .grid-2-cols {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+}
+
+.grid-3-stats {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 600px) {
+  .grid-3-stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* Typography */
