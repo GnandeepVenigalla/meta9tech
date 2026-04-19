@@ -1,6 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Menu, X, ArrowRight } from 'lucide-react';
 
 export default function Navbar() {
@@ -29,15 +30,8 @@ export default function Navbar() {
       padding: isScrolled ? '1rem 0' : '1.5rem 0'
     }}>
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <Link href="/" style={{ fontSize: '1.5rem', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#0f172a' }}>
-          <div style={{
-            width: '32px', height: '32px',
-            background: 'var(--primary)',
-            borderRadius: '6px',
-            display: 'flex', justifyContent: 'center', alignItems: 'center',
-            fontWeight: 'bold', color: 'white'
-          }}>M</div>
-          <span>Meta9<span style={{ color: 'var(--primary)' }}>Tech</span></span>
+        <Link href="/" style={{ display: 'flex', alignItems: 'center' }}>
+          <Image src="/images/meta9-logo.png" alt="Meta9Tech Logo" width={140} height={60} style={{ objectFit: 'contain' }} priority />
         </Link>
 
         {/* Desktop Nav */}

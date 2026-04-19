@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Mail, Phone, MapPin } from 'lucide-react';
 
 export default function Footer() {
@@ -18,15 +19,8 @@ export default function Footer() {
         }}>
           {/* Brand */}
           <div>
-            <Link href="/" style={{ fontSize: '1.5rem', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem', color: '#0f172a' }}>
-              <div style={{
-                width: '32px', height: '32px',
-                background: 'var(--primary)',
-                borderRadius: '6px',
-                display: 'flex', justifyContent: 'center', alignItems: 'center',
-                fontWeight: 'bold', color: 'white'
-              }}>M</div>
-              <span>Meta9<span style={{ color: 'var(--primary)' }}>Tech</span></span>
+            <Link href="/" style={{ display: 'flex', alignItems: 'center', marginBottom: '1rem' }}>
+              <Image src="/images/meta9-logo.png" alt="Meta9Tech Logo" width={140} height={60} style={{ objectFit: 'contain' }} />
             </Link>
             <p style={{ marginBottom: '1.5rem', maxWidth: '300px' }}>
               A global technology conglomerate driving innovation, digital transformation, and delivery excellence across industries.
