@@ -31,7 +31,7 @@ export default function Navbar() {
     }}>
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <Link href="/" style={{ display: 'flex', alignItems: 'center' }}>
-          <Image src="/images/meta9-logo.png" alt="Meta9Tech Logo" width={140} height={60} style={{ objectFit: 'contain' }} priority />
+          <Image src="/images/meta9-logo.png" alt="Meta9Tech Logo" width={140} height={80} style={{ objectFit: 'contain' }} priority />
         </Link>
 
         {/* Desktop Nav */}

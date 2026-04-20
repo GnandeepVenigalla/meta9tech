@@ -20,7 +20,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link href="/" style={{ display: 'flex', alignItems: 'center', marginBottom: '1rem' }}>
-              <Image src="/images/meta9-logo.png" alt="Meta9Tech Logo" width={140} height={60} style={{ objectFit: 'contain' }} />
+              <Image src="/images/meta9-logo.png" alt="Meta9Tech Logo" width={140} height={80} style={{ objectFit: 'contain' }} />
             </Link>
             <p style={{ marginBottom: '1.5rem', maxWidth: '300px' }}>
               A global technology conglomerate driving innovation, digital transformation, and delivery excellence across industries.
